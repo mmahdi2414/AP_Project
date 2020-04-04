@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signUpController">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.98" prefHeight="72.0" prefWidth="295.0"
+               text="Insert your information to login and friend can find you" textFill="#801826"/>
+        <TextField fx:id="userNameField" layoutX="37.0" layoutY="137.0" prefHeight="38.0" prefWidth="214.0"
+                   promptText="Enter your username"/>
+        <Label layoutX="37.0" layoutY="120.0" text="User Name"/>
+        <Label layoutX="37.0" layoutY="184.0" text="Password"/>
+        <PasswordField fx:id="passwordField" layoutX="37.0" layoutY="201.0" prefHeight="38.0" prefWidth="214.0"
+                       promptText="Enter your Password"/>
+        <Button fx:id="signUpButton" layoutX="96.0" layoutY="416.0" mnemonicParsing="false" onAction="#create"
+                text="Create account" textAlignment="CENTER"/>
+        <TextField fx:id="fullNameField" layoutX="38.0" layoutY="72.0" prefHeight="38.0" prefWidth="214.0"
+                   promptText="Enter your full name"/>
+        <Label layoutX="40.0" layoutY="55.0" text="Full name"/>
+        <CheckBox fx:id="rulesCheckBox" layoutX="94.0" layoutY="390.0" mnemonicParsing="false" text="Accept all rules"/>
+        <Label fx:id="invalidUserName" layoutX="68.0" layoutY="313.0" prefHeight="17.0" prefWidth="152.0"
+               text="you cant use this user name" visible="false"/>
+        <Label fx:id="invalidPassword" layoutX="7.0" layoutY="339.0"
+               text="password must be more than 8 number or character" visible="false"/>
+        <Label fx:id="invalidEmailOrPhone" layoutX="77.0" layoutY="365.0" prefHeight="17.0" prefWidth="134.0"
+               text="invalid number or email" visible="false"/>
+        <Label layoutX="34.0" layoutY="252.0" text="Phone number or Email"/>
+        <TextField fx:id="emailOrPhoneNumberField" layoutX="37.0" layoutY="269.0" prefHeight="38.0" prefWidth="214.0"
+                   promptText="Enter your phone number or email"/>
+        <Hyperlink fx:id="login" layoutX="96.0" layoutY="441.0" onAction="#goToLogin" text="I have an Account"/>
+    </children>
+
+
+</Pane>

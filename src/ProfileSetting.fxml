@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfileSettingController">
+   <children>
+      <ImageView fitHeight="46.0" fitWidth="288.0" onMouseClicked="#goToProfile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo_2017-06-24_14-43-01.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="288.0" layoutY="71.0" onMouseClicked="#goToEditProfile" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo_2017-06-24_14-43-12.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="288.0" layoutY="128.0" onMouseClicked="#changePassword" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo_2017-06-24_14-43-06.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="45.0" fitWidth="301.0" layoutX="3.0" layoutY="344.0" onMouseClicked="#addAccount" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo_2017-06-24_14-43-35.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="PrivateAccount" fitHeight="46.0" fitWidth="288.0" layoutY="181.0" onMouseClicked="#changePrivacy" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PrivateOff.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="saveOriginalPhotos" fitHeight="46.0" fitWidth="288.0" layoutY="237.0" onMouseClicked="#changeSavePhoto" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@saveOriginalPhotoOn.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="288.0" layoutY="402.0" onMouseClicked="#logOut" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo_2017-06-24_14-43-40.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="3.0" layoutY="305.0" text="Account">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="idLabel" layoutX="3.0" layoutY="41.0" text="id">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatController">
+    <children>
+        <Pane prefHeight="37.0" prefWidth="286.0" style="-fx-background-color: black;">
+            <children>
+                <Label fx:id="label" layoutX="47.0" layoutY="1.0" textFill="#16807e">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+          <ImageView fx:id="newStroy" fitHeight="29.0" fitWidth="30.0" onMouseClicked="#back" pickOnBounds="true" preserveRatio="true">
+              <image>
+                  <Image url="@green-back-button-icon-65921.png" />
+              </image>
+          </ImageView>
+        <ScrollPane fx:id="mainScroller" layoutX="-8.0" layoutY="37.0" prefHeight="332.0" prefWidth="296.0" style="-fx-background: black;" />
+      <ImageView fitHeight="48.0" fitWidth="49.0" layoutX="243.0" layoutY="370.0" onMouseClicked="#sendMessage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@send.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="textArea" layoutY="367.0" prefHeight="54.0" prefWidth="239.0" wrapText="true" />
+    </children>
+</Pane>

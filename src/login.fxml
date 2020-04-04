@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="295.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button fx:id="LoginButton" layoutX="182.0" layoutY="337.0" mnemonicParsing="false" onAction="#getUserName" prefHeight="25.0" prefWidth="58.0" text="Log In" />
+      <TextField fx:id="userNameLoginTextField" cache="true" layoutX="40.0" layoutY="192.0" prefHeight="38.0" prefWidth="214.0" promptText="Enter your username" />
+      <Label layoutX="40.0" layoutY="175.0" text="User Name" />
+      <Label layoutX="40.0" layoutY="239.0" text="password" />
+      <PasswordField fx:id="passwordLoginField" layoutX="40.0" layoutY="256.0" prefHeight="38.0" prefWidth="214.0" promptText="Enter your Password" />
+      <Button fx:id="signUpButton" layoutX="62.0" layoutY="337.0" mnemonicParsing="false" onAction="#goToSignUpPage" text="Sign Up" textAlignment="CENTER" />
+      <Hyperlink fx:id="forgetPasswordLink" layoutX="94.0" layoutY="385.0" onAction="#goToForgetPasswordPage" text="Forget password??" />
+      <Label fx:id="cantLogin" layoutX="62.0" layoutY="307.0" text="Incorrect password or username" visible="false" />
+      <ImageView fitHeight="86.0" fitWidth="288.0" layoutX="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photo_2017-06-26_18-46-47.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

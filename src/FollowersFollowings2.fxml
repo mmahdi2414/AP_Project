@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FollowerFollowingsController2">
+    <children>
+        <Pane prefHeight="37.0" prefWidth="286.0">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@344330-200.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="followerOrwhat" layoutX="90.0" layoutY="5.0" prefHeight="37.0" prefWidth="107.0" />
+         </children>
+        </Pane>
+        <ScrollPane fx:id="mainScroller" layoutX="-1.0" layoutY="37.0" prefHeight="369.0" prefWidth="288.0" />
+    </children>
+</Pane>

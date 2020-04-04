@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="288.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OthersProfileController">   <children>
+      <Pane layoutX="-1.0" style="-fx-background-color: black;">
+          <children>
+              <Pane layoutX="1.0" layoutY="401.0">
+                  <children>
+                      <ImageView fx:id="home" fitHeight="58.0" fitWidth="58.0" layoutY="2.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@photo_2017-06-26_18-47-57.jpg" />
+                          </image>
+                      </ImageView>
+                      <ImageView fx:id="search" fitHeight="58.0" fitWidth="58.0" layoutX="58.0" layoutY="2.0" onMouseClicked="#goToExplore" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@photo_2017-06-26_18-48-05.jpg" />
+                          </image>
+                      </ImageView>
+                      <ImageView fx:id="camera" fitHeight="58.0" fitWidth="58.0" layoutX="115.0" layoutY="2.0" onMouseClicked="#goToCamera" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@photo_2017-06-26_18-48-33.jpg" />
+                          </image>
+                      </ImageView>
+                      <ImageView fx:id="like" fitHeight="58.0" fitWidth="58.0" layoutX="172.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@photo_2017-06-26_18-48-16.jpg" />
+                          </image>
+                      </ImageView>
+                      <ImageView fx:id="profile" fitHeight="58.0" fitWidth="58.0" layoutX="230.0" layoutY="2.0" onMouseClicked="#goToProfile" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@photo_2017-06-26_18-48-20.jpg" />
+                          </image>
+                      </ImageView>
+                  </children>
+              </Pane>
+              <Pane layoutX="86.0" prefHeight="47.0" prefWidth="202.0">
+                  <children>
+                      <Label fx:id="ID" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="8.0" prefHeight="32.0" prefWidth="175.0" text="Label" textFill="#4db57a">
+                          <font>
+                              <Font name="System Bold" size="18.0" />
+                          </font>
+                      </Label>
+                  </children>
+              </Pane>
+              <Pane layoutX="75.0" layoutY="47.0" prefHeight="56.0" prefWidth="213.0">
+                  <children>
+                      <Pane fx:id="postPane" layoutX="18.0" prefHeight="56.0" prefWidth="65.0">
+                          <children>
+                              <Label layoutX="21.0" layoutY="6.0" text="Post" textFill="#4db57a" />
+                              <Label fx:id="numberOfPost" layoutX="19.0" layoutY="28.0" text="Label" textFill="#4db57a" />
+                          </children>
+                      </Pane>
+                      <Pane fx:id="followerPane" layoutX="74.0" onMouseClicked="#showFollowers" prefHeight="56.0" prefWidth="65.0">
+                          <children>
+                              <Label layoutX="11.0" layoutY="6.0" text="Follower" textFill="#4db57a" />
+                              <Label fx:id="numberOfFollower" layoutX="11.0" layoutY="32.0" text="Label" textFill="#4db57a" />
+                          </children>
+                      </Pane>
+                      <Pane fx:id="followingPane" layoutX="148.0" onMouseClicked="#showFollowings" prefHeight="56.0" prefWidth="65.0">
+                          <children>
+                              <Label layoutX="1.0" layoutY="4.0" text="Following" textFill="#4db57a" />
+                              <Label fx:id="numberOfFollowing" layoutX="19.0" layoutY="28.0" text="Label" textFill="#4db57a" />
+                          </children>
+                      </Pane>
+                  </children>
+              </Pane>
+              <ScrollPane fx:id="pagePost" layoutX="1.0" layoutY="236.0" prefHeight="165.0" prefWidth="288.0" style="-fx-background: black;" />
+              <ImageView fitHeight="77.0" fitWidth="77.0" layoutX="1.0" layoutY="24.0" pickOnBounds="true">
+                  <image>
+                      <Image url="@Profile1.png" />
+                  </image>
+              </ImageView>
+              <Button fx:id="followButton" layoutX="225.0" layoutY="114.0" mnemonicParsing="false" onAction="#Follow" style="-fx-background-color: #626262;" text="Follow" textFill="#30b990">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font></Button>
+              <Pane fx:id="bioPane" layoutX="1.0" layoutY="152.0" prefHeight="71.0" prefWidth="286.0">
+                  <children>
+                      <Label fx:id="fullName" layoutX="14.0" layoutY="6.0" prefHeight="21.0" prefWidth="115.0" text="Fullname" textFill="#4db57a">
+                          <font>
+                              <Font name="System Bold" size="12.0" />
+                          </font>
+                      </Label>
+                      <Label layoutX="14.0" layoutY="27.0" />
+                  </children>
+              </Pane>
+            <Button layoutY="114.0" mnemonicParsing="false" onMouseClicked="#sendMessage" prefHeight="11.0" prefWidth="175.0" style="-fx-background-color: #626262;" text="Send Direct Message" textFill="#1eb978">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="15.0" />
+               </font>
+            </Button>
+      
+          </children>
+      </Pane>
+   </children>
+</Pane>

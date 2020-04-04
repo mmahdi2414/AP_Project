@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DMController">
+    <children>
+        <Pane prefHeight="37.0" prefWidth="286.0" style="-fx-background-color: black;">
+            <children>
+                <Label fx:id="id" layoutX="87.0" layoutY="1.0" text="Messages" textFill="#16807e">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Label>
+                <ImageView fx:id="newStroy" fitHeight="36.0" fitWidth="32.0" layoutX="-2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#goToHome">
+                    <image>
+                        <Image url="@green-back-button-icon-65921.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <ScrollPane fx:id="mainScroller" layoutX="-1.0" layoutY="37.0" prefHeight="369.0" prefWidth="288.0" style="-fx-background: black;" />
+    </children>
+</Pane>

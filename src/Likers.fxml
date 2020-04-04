@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="288.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LikersController">
+   <children>
+      <Label layoutX="91.0" layoutY="1.0" text="Likers">
+         <font>
+            <Font name="Comic Sans MS" size="37.0" />
+         </font>
+      </Label>
+      <ScrollPane fx:id="scrollPane" layoutY="53.0" prefHeight="405.0" prefWidth="288.0" style="-fx-background-color: white;" />
+      <ImageView fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back-button-icon-72762.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

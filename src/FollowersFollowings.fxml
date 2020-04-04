@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FollowersFollowingsController">
+    <children>
+        <Pane layoutX="1.0" layoutY="401.0">
+            <children>
+                <ImageView fx:id="home" fitHeight="58.0" fitWidth="58.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Home1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="search" fitHeight="58.0" fitWidth="58.0" layoutX="56.0" layoutY="1.0" onMouseClicked="#goToExplore" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@photo_2017-06-02_16-32-52.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="camera" fitHeight="58.0" fitWidth="58.0" layoutX="114.0" layoutY="2.0" onMouseClicked="#goToCamera" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@photo_2017-06-02_16-33-16.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="like" fitHeight="58.0" fitWidth="58.0" layoutX="172.0" layoutY="1.0" onMouseClicked="#goToNotificationsLog" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="profile" fitHeight="58.0" fitWidth="58.0" layoutX="228.0" layoutY="1.0" onMouseClicked="#goToProfile" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@photo_2017-06-02_17-03-46.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane prefHeight="37.0" prefWidth="286.0">
+         <children>
+            <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Back.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="followerOrwhat" layoutX="90.0" layoutY="5.0" prefHeight="37.0" prefWidth="107.0" />
+         </children>
+        </Pane>
+        <ScrollPane fx:id="mainScroller" layoutX="-1.0" layoutY="37.0" prefHeight="369.0" prefWidth="288.0" />
+    </children>
+</Pane>

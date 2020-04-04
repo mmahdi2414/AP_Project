@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="288.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExploreController">
+   <children>
+      <Pane layoutX="1.0" layoutY="401.0">
+         <children>
+            <ImageView fx:id="home" fitHeight="58.0" fitWidth="58.0" layoutY="-1.0" onMouseClicked="#goToHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-47-57.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="search" fitHeight="58.0" fitWidth="58.0" layoutX="56.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-48-05.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="camera" fitHeight="58.0" fitWidth="58.0" layoutX="114.0" layoutY="2.0" onMouseClicked="#goToCamera" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-48-33.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="like" fitHeight="58.0" fitWidth="58.0" layoutX="172.0" layoutY="1.0" onMouseClicked="#goToNotificationsLog" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-48-16.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="profile" fitHeight="58.0" fitWidth="58.0" layoutX="228.0" layoutY="1.0" onMouseClicked="#goToProfile" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-48-20.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="23.0" fitWidth="24.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane prefHeight="60.0" prefWidth="286.0">
+         <children>
+            <ImageView fx:id="searchView" fitHeight="43.0" fitWidth="56.0" onMouseClicked="#getText" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-02_16-32-52.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="searchedUserNameTextField" layoutX="64.0" layoutY="10.0" onAction="#getText" prefHeight="33.0" prefWidth="183.0" promptText="Search" />
+         </children>
+      </Pane>
+      <ScrollPane fx:id="MainPane" layoutX="-1.0" layoutY="86.0" prefHeight="315.0" prefWidth="288.0" style="-fx-background-color: white;" />
+   </children>
+</Pane>

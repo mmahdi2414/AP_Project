@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeController">
+   <children>
+      <Pane layoutX="1.0" layoutY="401.0">
+         <children>
+            <ImageView fx:id="home" fitHeight="58.0" fitWidth="58.0" layoutY="-1.0" onMouseClicked="#reload" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-47-57.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="search" fitHeight="58.0" fitWidth="58.0" layoutX="56.0" layoutY="1.0" onMouseClicked="#goToExplore" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-48-05.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="camera" fitHeight="58.0" fitWidth="58.0" layoutX="114.0" layoutY="2.0" onMouseClicked="#goToCamera" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-48-33.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="like" fitHeight="58.0" fitWidth="58.0" layoutX="172.0" layoutY="1.0" onMouseClicked="#goToNotificationsLog" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-48-16.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="profile" fitHeight="58.0" fitWidth="58.0" layoutX="228.0" layoutY="1.0" onMouseClicked="#goToProfile" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@photo_2017-06-26_18-48-20.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane prefHeight="37.0" prefWidth="286.0">
+         <children>
+            <Label fx:id="id" layoutX="105.0" layoutY="1.0" text="HOME" textFill="#16807e">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="Direct" fitHeight="37.0" fitWidth="56.0" layoutX="256.0" onMouseClicked="#goToDMs" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Direct.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="newStroy" fitHeight="36.0" fitWidth="32.0" layoutX="-2.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@NewDirect.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ScrollPane fx:id="postsPos" layoutX="-1.0" layoutY="37.0" prefHeight="369.0" prefWidth="288.0" style="-fx-background-color: white;" />
+   </children>
+</Pane>
